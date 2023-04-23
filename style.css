@@ -15,6 +15,7 @@ body {
   width: 100vw;
 }
 
+/*------------------Top Header----------------------*/
 header {
   height: 20vh;
 }
@@ -49,6 +50,7 @@ header {
   gap: 29px;
 }
 
+/*-------------------introduction--------------------*/
 .main-section__1 {
   height: 80vh;
   display: flex;
@@ -79,4 +81,57 @@ header {
   color: #fff;
   border-radius: 83px;
   background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+}
+
+/*------------------------Projects----------------*/
+.main-section__2 {
+  height: 100vh;
+}
+
+.projects {
+  width: 80%;
+  margin: 0 auto;
+}
+.projects h1  {
+  margin-bottom: 93px;
+}
+
+.projects ul {
+  display: grid;
+  gap: 97px 220px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects__list-item {
+  box-sizing: border-box;
+  width: 550px;
+  height: 700px;
+  border-radius: 15px 0 15px 0;
+  box-shadow: 2px 2px 5px #E5E5E5,
+              -2px 2px 5px #E5E5E5,
+              2px -2px 5px #E5E5E5,
+              -2px -2px 5px #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.projects__list-item h2 {
+  font-size: 36px;
+}
+.projects__list-item img {
+  margin-top: 25px;
+  border-radius: 8px;
+}
+.projects__list-item p {
+  width: 500px;
+  font-size: 28px;
+}
+
+.projects__list-item .button-link {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
