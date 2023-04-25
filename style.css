@@ -16,6 +16,8 @@ body {
   color: #fff;
   background-color: #0F1624;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 /*------------------Top Header----------------------*/
@@ -93,6 +95,7 @@ header {
 
 /*-------------------introduction--------------------*/
 .main__section {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
@@ -213,8 +216,18 @@ header {
 .technologies__list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  width: 40%;
 }
+
+.technologies__list--advanced .slider-foreground {
+  width: 100%;
+}
+
+.technologies__list--intermediate .slider-foreground {
+  width: 70%;
+}
+
 .technologies__label {
   display: flex;
   justify-content: space-between;
@@ -222,20 +235,37 @@ header {
   margin: 0 auto;
 }
 
+.technologies__label h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .slider-background {
   position: relative;
   width: 100%;
-  height: 32px;
+  height: 15px;
   background: #162950;
   border-radius: 83px;
 }
 
 .slider-foreground {
   position: absolute;
-  width: 80%;
-  height: 32px;
+  height: 100%;
   background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
   border-radius: 83px;
 }
 
-/*-------------------Certifications--------------------*/
+
+
+/*-------------------About Me--------------------*/
+#about-me {
+  margin-top: 70px;
+  background-color: #fff;
+  height: 300px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 30px;
+}
