@@ -207,13 +207,13 @@ header {
 
 /*-------------Technologies-------------------------*/
 .technologies h1 {
-  margin-bottom: 133px;
+  margin-bottom: 50px;
 }
 
 .technologies__list {
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 10px;
 }
 .technologies__label {
   display: flex;
