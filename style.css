@@ -15,7 +15,6 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
   background-color: #0F1624;
-  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -41,6 +40,7 @@ header {
   font-weight: inherit;
   text-align: center;
   user-select: none;
+  font-size: 24px;
 }
 
 .top-nav ul {
@@ -94,12 +94,14 @@ header {
 }
 
 /*-------------------introduction--------------------*/
+
+.main {
+    flex-grow: 1;
+}
 .main__section {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  box-sizing: border-box;
   width: 80%;
   margin: 0 auto;
 }
@@ -155,10 +157,10 @@ header {
   width: 350px;
   height: 350px;
   border-radius: 15px 0 15px 0;
-  box-shadow: 2px 2px 5px #E5E5E5,
-              -2px 2px 5px #E5E5E5,
-              2px -2px 5px #E5E5E5,
-              -2px -2px 5px #E5E5E5;
+  box-shadow: 0.2px 0.2px 10px #e5e5e5d2,
+              -0.2px 0.2px 10px #e5e5e5d2,
+              0.2px -0.2px 10px #e5e5e5d2,
+              -0.2px -0.2px 10px #e5e5e5d2;
   display: flex;
   flex-direction: column;
   align-items: center;
