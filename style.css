@@ -82,6 +82,11 @@ header {
   width: 100%;
 } 
 
+@media screen and (hover:none) {
+  .top-nav__page a:hover::after {
+    width: 0;
+  }
+}
 .top-nav__social-media {
   align-items: center;
   height: 100%;
@@ -181,9 +186,6 @@ header {
     grid-template-columns: 1fr;
   }
 
-  .projects__list-item {
-
-  }
 }
 
 .projects__list-item {
