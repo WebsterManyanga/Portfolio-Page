@@ -147,6 +147,15 @@ header {
     transition: transform 0.3s;
   }
 
+  .top-nav__title {
+    font-weight: inherit;
+    text-align: center;
+    user-select: none;
+    font-size: 18px;
+    align-self: center;
+    position: relative;
+  }
+
   .top-nav__page {
     flex-grow: 1;
     flex-direction: column;
