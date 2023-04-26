@@ -7,6 +7,7 @@ ul {
   list-style: none;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -163,8 +164,16 @@ header {
     width: 90%;
   }
 }
-/*------------------------Projects----------------*/
 
+@media screen and (hover:none) {
+  .button-link:hover {
+    transform: scale(1);
+  }
+}
+/*------------------------Projects----------------*/
+.projects {
+  padding-top: 50px;
+}
 .projects h1  {
   margin-bottom: 93px;
 }
@@ -328,4 +337,10 @@ header {
 #about-me img{
   width: 100px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  #about-me {
+    font-size: 13px;
+  }
 }
