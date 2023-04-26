@@ -83,11 +83,6 @@ header {
   width: 100%;
 } 
 
-@media screen and (hover:none) {
-  .top-nav__page a:hover::after {
-    width: 0;
-  }
-}
 .top-nav__social-media {
   align-items: center;
   height: 100%;
@@ -106,22 +101,64 @@ header {
   font-size: 30px;
 }
 
+@media screen and (hover:none) {
+  .top-nav__page a:hover::after {
+    width: 0;
+  }
+
+  .top-nav__social-media a:hover {
+    color: inherit;
+    font-size: inherit;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   header {
     height: 0vh;
   }
   .menu-btn {
     display: block;
-    position: sticky;
-    top: 2px;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 50px;
     height: 50px;
     font-size: 30px;
+    color: #0F1624;
+    z-index: 2;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
   }
 
+
   .top-nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    color: #0F1624;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-100vw);
+    transition: transform 0.3s;
+  }
+
+  .top-nav__page {
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .top-nav__social-media {
+    height: fit-content;
+    gap: 30px;
+    transform: scale(1.5);
+    padding-bottom: 50px;
   }
 }
 /*-------------------introduction--------------------*/
