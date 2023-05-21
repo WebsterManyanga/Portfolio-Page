@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Page/static/css/main.2800c36b.css",
+    "main.js": "/Portfolio-Page/static/js/main.d996a75e.js",
+    "static/js/787.b701888c.chunk.js": "/Portfolio-Page/static/js/787.b701888c.chunk.js",
+    "static/media/displayPhoto.jpg": "/Portfolio-Page/static/media/displayPhoto.57b67b4ee086a99c1d8b.jpg",
+    "static/media/university-page-preview.jpg": "/Portfolio-Page/static/media/university-page-preview.212b442f6c9d2a0ec576.jpg",
+    "static/media/eminem-tribute-preview.jpg": "/Portfolio-Page/static/media/eminem-tribute-preview.6e61f729cedbaa354177.jpg",
+    "static/media/little-lemon.jpg": "/Portfolio-Page/static/media/little-lemon.61a689e8a9513d66af16.jpg",
+    "static/media/library-form-preview.jpg": "/Portfolio-Page/static/media/library-form-preview.5dff2eef2cd55db63050.jpg",
+    "static/media/portfolio-page-preview.jpg": "/Portfolio-Page/static/media/portfolio-page-preview.a7955d95703b11f95e41.jpg",
+    "index.html": "/Portfolio-Page/index.html",
+    "main.2800c36b.css.map": "/Portfolio-Page/static/css/main.2800c36b.css.map",
+    "main.d996a75e.js.map": "/Portfolio-Page/static/js/main.d996a75e.js.map",
+    "787.b701888c.chunk.js.map": "/Portfolio-Page/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2800c36b.css",
+    "static/js/main.d996a75e.js"
+  ]
+}
