@@ -1,12 +1,21 @@
 import './Header.css';
+import { useState } from 'react';
 
 export default function Header () {
+  const [menuIcon, setMenuIcon] = useState('fa-bars');
+
   return (
     <header>
-      <button className="menu-btn">
-        <i className="fa-solid fa-bars"></i>
+      <button 
+        className="menu-btn"
+        onClick={() => menuIcon === 'fa-bars' ? setMenuIcon('fa-house') : setMenuIcon('fa-bars')}
+      >
+        <i className={`fa-solid ${menuIcon}`}></i>
       </button>
-      <nav className="top-nav">
+      <nav 
+        className="top-nav"
+        style={menuIcon === 'fa-house' ? {transform: 'translateX(0)'} : {transform: 'translateX(-100vw)'}}
+      >
         <h1 className="top-nav__title">
           Front-end<br/>Web Developer<br/>Portfolio
         </h1>
