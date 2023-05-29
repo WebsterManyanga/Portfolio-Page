@@ -7,16 +7,17 @@ header {
 }
 
 .top-nav {
-  position: relative;
+  position: fixed;
   display: grid;
   grid-template-columns: 20% 60% 20%;
   align-items: baseline;
   padding-top: 46px;
   font-weight: 500;
   font-size: 20px;
-  height: 100%;
   box-sizing: border-box;
   width: 100%;
+  background-color: #0f1624;
+  
 }
 
 
@@ -71,11 +72,13 @@ header {
   margin: 10px;
 }
 .top-nav__social-media a {
-  transition: font-size 0.3s;
+  font-size: 25px;
+  display: block;
+  transition: transform 0.3s;
 }
 .top-nav__social-media a:hover {
   color: #13ADC7;
-  font-size: 30px;
+  transform: scale(1.5);
 }
 
 @media screen and (hover:none) {
