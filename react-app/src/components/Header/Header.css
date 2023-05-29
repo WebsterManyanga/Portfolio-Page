@@ -138,7 +138,6 @@ header {
     align-self: center;
     position: relative;
   }
-
   .top-nav__page {
     flex-grow: 1;
     flex-direction: column;
