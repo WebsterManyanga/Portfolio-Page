@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-Page/static/css/main.6ebea6f8.css",
-    "main.js": "/Portfolio-Page/static/js/main.8d7c58bd.js",
+    "main.css": "/Portfolio-Page/static/css/main.47ab2a7e.css",
+    "main.js": "/Portfolio-Page/static/js/main.45b6a450.js",
     "static/js/787.b701888c.chunk.js": "/Portfolio-Page/static/js/787.b701888c.chunk.js",
     "static/media/displayPhoto.jpg": "/Portfolio-Page/static/media/displayPhoto.57b67b4ee086a99c1d8b.jpg",
+    "static/media/logo.png": "/Portfolio-Page/static/media/logo.8d75ba29dcc3f9522199.png",
     "static/media/university-page-preview.jpg": "/Portfolio-Page/static/media/university-page-preview.212b442f6c9d2a0ec576.jpg",
     "static/media/eminem-tribute-preview.jpg": "/Portfolio-Page/static/media/eminem-tribute-preview.6e61f729cedbaa354177.jpg",
     "static/media/little-lemon.jpg": "/Portfolio-Page/static/media/little-lemon.61a689e8a9513d66af16.jpg",
     "static/media/library-form-preview.jpg": "/Portfolio-Page/static/media/library-form-preview.5dff2eef2cd55db63050.jpg",
     "static/media/portfolio-page-preview.jpg": "/Portfolio-Page/static/media/portfolio-page-preview.a7955d95703b11f95e41.jpg",
     "index.html": "/Portfolio-Page/index.html",
-    "main.6ebea6f8.css.map": "/Portfolio-Page/static/css/main.6ebea6f8.css.map",
-    "main.8d7c58bd.js.map": "/Portfolio-Page/static/js/main.8d7c58bd.js.map",
+    "main.47ab2a7e.css.map": "/Portfolio-Page/static/css/main.47ab2a7e.css.map",
+    "main.45b6a450.js.map": "/Portfolio-Page/static/js/main.45b6a450.js.map",
     "787.b701888c.chunk.js.map": "/Portfolio-Page/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ebea6f8.css",
-    "static/js/main.8d7c58bd.js"
+    "static/css/main.47ab2a7e.css",
+    "static/js/main.45b6a450.js"
   ]
 }
