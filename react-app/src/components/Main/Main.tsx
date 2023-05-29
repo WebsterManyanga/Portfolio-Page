@@ -4,6 +4,7 @@ import LibraryFormPreview from '../../images/library-form-preview.jpg';
 import EminemTributePreview from '../../images/eminem-tribute-preview.jpg';
 import PortfolioPreview from '../../images/portfolio-page-preview.jpg';
 import LittleLemonPreview from '../../images/little-lemon.jpg';
+import Logo from '../../images/logo.png';
 
 export default function Main() {
   return (
@@ -12,9 +13,9 @@ export default function Main() {
       <h1>Welcome
       </h1>
       <p>
-        Welcome to my front end developer portfolio page! This is where you can find examples of my work and learn more about my experience in web development. I am passionate about creating beautiful and functional websites that provide a great user experience. Please take a look around and feel free to contact me if you have any questions or would like to discuss a potential project. Thank you for visiting! <br />~ Webster Manyanga
-      </p>
+      Welcome to my front-end web developer portfolio website! Here, you'll find a showcase of my skills, projects, and experiences as a professional front-end developer. My portfolio is designed to demonstrate my expertise in creating visually appealing and functional web pages and applications, as well as my commitment to staying up-to-date with the latest industry trends and technologies. <br /> ~Webster Manyanga </p>
       <a href="#projects" className="button-link">Let's begin</a>
+      <img src={Logo} className='introduction__logo'/>
     </section> 
     <section className="main__section projects" id="projects">
       <h1>Projects</h1>

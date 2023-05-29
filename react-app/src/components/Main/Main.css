@@ -7,6 +7,7 @@ flex-direction: column;
 padding-top: 100px;
 width: 80%;
 margin: 0 auto;
+position: relative;
 }
 
 
@@ -44,7 +45,31 @@ transition: transform 0.3s;
 transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
+.introduction__logo{
+  position: absolute;
+  width: 200px;
+  height: auto;
+  right: 50px;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+  animation: logoSpin 3s linear infinite alternate;
+}
+
+.introduction__logo:hover {
+  opacity: 1;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(-20deg);
+  } 
+
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@media screen and (max-width: 1110px) {
 
 .introduction {
   height: 100vh;
@@ -52,6 +77,10 @@ transform: scale(1.1);
 
 .introduction p {
   width: 90%;
+}
+
+.introduction__logo {
+  display: none;
 }
 }
 
