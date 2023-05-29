@@ -52,7 +52,7 @@ header {
   background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
   bottom: -10px;
   left: 0;
-  transition: all 0.2s;
+  transition: all 0.5s;
   border-radius: 10px;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1110px) {
   header {
     height: 0vh;
   }
