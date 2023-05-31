@@ -48,25 +48,6 @@
   margin-top: 25px;
   border-radius: 8px;
 }
-.projects__technologies  {
-  width: 100%;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.fa-html5 {
-  color: #e34c26;
-}
-
-.fa-css3-alt {
-  color: #264de4;
-}
-
-.fa-js {
-  color: #F0DB4F;
-}
 .projects__links {
   display: flex;
   width: 100%;
