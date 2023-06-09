@@ -4,6 +4,11 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+  border: 2px dashed red;
+}
+
+.fa-brands {
+  font-size:35px;
 }
 
 .fa-html5 {
@@ -23,7 +28,6 @@
 }
 .typescript {
   background-color: #007acc;
-  display: block;  
 }
 
 .typescript::after {

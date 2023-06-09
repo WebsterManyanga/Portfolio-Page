@@ -1,3 +1,4 @@
+import { Container, Row, Col } from "react-bootstrap";
 import ProjectData from "../../DataTypes/ProjectData";
 import './TechStack.css';
 
@@ -7,16 +8,17 @@ interface Props {
 
 export default function TechStack({project} : Props) {
   return (
-    <ul className="projects__technologies">
+    <Container>
+      <Row className="my-4">
       {project.techStack.map((technology, i) => {
         const icon = findIcon(technology);
         return (
-        <li key={i}>
-          
+        <Col xs={2}>
           <i className={`fa-brands ${icon}`}></i>
-        </li>
+        </Col>
       )})}
-  </ul>
+      </Row>
+  </Container>
 
   )
 }

@@ -55,11 +55,10 @@
   gap: 20px;
 }
 
-.projects__list-item .button-link {
+.projects .button-link {
   font-size: 14px;
   padding: 10px ;
   width: fit-content;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
