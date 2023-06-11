@@ -2,7 +2,7 @@ import './Projects.css';
 import ProjectData from '../../Server/Projects';
 import TechStack from '../TechStack';
 import Card from 'react-bootstrap/Card';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 
 export default function Projects() {
@@ -15,19 +15,25 @@ export default function Projects() {
       <Row>
         {ProjectData.map((project, index) => (
           <Col md={6} lg={4} className='my-4'>
-            <Card
-              bg='primary'
-            >
+            <Card>
               <Card.Img 
                 variant='top' 
                 src={project.image} 
                 alt='website preview image'
               />     
               <Card.Body>
-                <Card.Title>{project.name}</Card.Title>
+                <Card.Title className='card-title p-3'>{project.name}</Card.Title>
                 <TechStack project={project}/>
-                <Card.Link href={project.site} className='button-link'>Visit Site</Card.Link>
-                <Card.Link href={project.github} className='button-link'>Github Repo</Card.Link>
+                <Container className='mt-4'>
+                  <Row className='gy-3'>
+                    <Col xs={12} md={6}>
+                      <a href={project.site} className='button-link py-3'>Visit Site</a>
+                    </Col>
+                    <Col>
+                      <a href={project.github} className='button-link py-3'>Github</a>
+                    </Col>
+                  </Row>
+                </Container>
               </Card.Body>
             </Card>
           </Col>

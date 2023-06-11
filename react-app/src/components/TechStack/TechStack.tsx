@@ -8,17 +8,15 @@ interface Props {
 
 export default function TechStack({project} : Props) {
   return (
-    <Container>
-      <Row className="my-4">
+    <ul className="projects__technologies">
       {project.techStack.map((technology, i) => {
         const icon = findIcon(technology);
         return (
-        <Col xs={2}>
-          <i className={`fa-brands ${icon}`}></i>
-        </Col>
+          <li>
+            <i className={`fa-brands ${icon}`}></i>
+          </li>
       )})}
-      </Row>
-  </Container>
+  </ul>
 
   )
 }

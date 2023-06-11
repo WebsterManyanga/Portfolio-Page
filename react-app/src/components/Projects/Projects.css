@@ -57,9 +57,13 @@
 
 .projects .button-link {
   font-size: 14px;
-  padding: 10px ;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
 }
-  
+
+.card-title {
+  background-color: #0F1624;
+  color: #fff;
+  border-radius: 5px;
+}
+
