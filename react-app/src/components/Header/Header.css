@@ -151,8 +151,18 @@ header {
     transform: scale(1.5);
     padding-bottom: 50px;
   }
+
+  .hide {
+    transform: translate(-100vw);
+  }
+  
+  .show {
+    transform: translate(0);
+  }
+
 }
 
 .fa-brands {
   font-size:30px;
 }
+

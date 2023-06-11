@@ -13,18 +13,52 @@ export default function Header () {
         <i className={`fa-solid ${menuIcon}`}></i>
       </button>
       <nav 
-        className="top-nav"
-        style={menuIcon === 'fa-house' ? {transform: 'translateX(0)'} : {transform: 'translateX(-100vw)'}}
+        className={`top-nav ${menuIcon === 'fa-house' ? 'show' : 'hide'}`}
       >
         <h1 className="top-nav__title">
           Front-End Dev<br/>Portfolio
         </h1>
         <ul className="top-nav__page">
-        <li><a href="#">HOME</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#technologies">TECHNOLOGIES</a></li>
-          <li><a href="#about-me">ABOUT</a></li>
-          <li><a href="#about-me">CONTACT</a></li>
+        <li>
+          <a 
+            href="#"
+            onClick={() => menuIcon === 'fa-bars' ? setMenuIcon('fa-house') : setMenuIcon('fa-bars')}
+          >
+            HOME
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#projects"
+            onClick={() => menuIcon === 'fa-bars' ? setMenuIcon('fa-house') : setMenuIcon('fa-bars')}
+          >
+            PROJECTS
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#technologies"
+            onClick={() => menuIcon === 'fa-bars' ? setMenuIcon('fa-house') : setMenuIcon('fa-bars')}
+          >
+            TECHNOLOGIES
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#about-me"
+            onClick={() => menuIcon === 'fa-bars' ? setMenuIcon('fa-house') : setMenuIcon('fa-bars')}
+          >
+            ABOUT
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#about-me"
+            onClick={() => menuIcon === 'fa-bars' ? setMenuIcon('fa-house') : setMenuIcon('fa-bars')}
+          >
+            CONTACT
+          </a>
+        </li>
         </ul>
         <ul className="top-nav__social-media">
           <li>

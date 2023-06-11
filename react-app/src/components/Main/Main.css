@@ -91,6 +91,11 @@ transform: scale(1.1);
 }
 
 /*-------------Technologies-------------------------*/
+@media screen and (min-width: 1110px) {
+.technologies {
+  padding-top: 20vh;
+}
+}
 .technologies h1 {
 margin-bottom: 50px;
 }
