@@ -8,12 +8,16 @@ import { Col, Container, Row } from 'react-bootstrap';
 export default function Projects() {
   return (
     <section className="main__section projects" id="projects">
+
+      
     <h1>Projects</h1>
     <Container >
       <Row>
         {ProjectData.map((project, index) => (
           <Col md={6} lg={4} className='my-4'>
-            <Card>
+            <Card
+              bg='primary'
+            >
               <Card.Img 
                 variant='top' 
                 src={project.image} 

@@ -29,4 +29,9 @@ code {
     monospace;
 }
 
+:root {
+  --primary-color: #f00;
+}
 
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
