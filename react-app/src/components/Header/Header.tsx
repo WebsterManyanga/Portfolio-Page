@@ -1,7 +1,11 @@
 import './Header.css';
 import { useState } from 'react';
 
-export default function Header () {
+interface Props {
+  cardFlip: any
+}
+
+export default function Header ({cardFlip}: Props) {
   const [menuIcon, setMenuIcon] = useState('fa-house');
 
   return (

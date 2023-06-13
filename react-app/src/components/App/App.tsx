@@ -1,13 +1,16 @@
-import React from 'react';
 import './App.css';
 import Header from '../Header';
 import Main from '../Main';
 import Footer from '../Footer';
+import {useState} from 'react';
 
 function App() {
+
+  const [flip, setFlip] = useState(false);
+
   return (
     <>
-      <Header />
+      <Header cardFlip={setFlip}/>
       <Main />
       <Footer />
     </>
