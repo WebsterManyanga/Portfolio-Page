@@ -1,4 +1,4 @@
-import './Main.css';
+import './Main.scss';
 import Logo from '../../images/logo.png';
 import Projects from '../Projects';
 

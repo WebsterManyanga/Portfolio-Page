@@ -1,6 +1,5 @@
-import { Container, Row, Col } from "react-bootstrap";
 import ProjectData from "../../DataTypes/ProjectData";
-import './TechStack.css';
+import './TechStack.scss';
 
 interface Props {
   project: ProjectData

@@ -1,4 +1,4 @@
-import './Footer.css';
+import './Footer.scss';
 import DisplayPhoto from '../../images/displayPhoto.jpg'
 import { useState } from 'react';
 

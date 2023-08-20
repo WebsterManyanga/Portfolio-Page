@@ -1,4 +1,4 @@
-import './Projects.css';
+import './Projects.scss';
 import ProjectData from '../../Server/Projects';
 import TechStack from '../TechStack';
 import Card from 'react-bootstrap/Card';
