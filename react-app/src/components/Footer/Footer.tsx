@@ -14,8 +14,8 @@ export default function Footer() {
   }
 
   return (
-    <footer id="about-me">
-      <div className="profile-container">
+    <footer className='about-me'>
+      <div className="about-me__card">
         <div className={`profile ${flipCard}`}>
           <div className='profile__front'>
             <img 

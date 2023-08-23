@@ -32,70 +32,91 @@ header {
   box-sizing: border-box;
   width: 100%;
   background-color: variables.$secondary-color;
+
+  &__title {
+    font-weight: inherit;
+    text-align: center;
+    user-select: none;
+    font-size: 2vw;
+    align-self: start;
+    position: relative;
+    top: -20px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    position: relative;
+  }
+
+  &__page {
+    gap: 60px;
+
+     a {
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 5px;
+        background: variables.$gradient;
+        bottom: -10px;
+        left: 0;
+        transition: all 0.5s;
+        border-radius: 10px;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+
+      } 
+
+
+    }     
+
+    
+  }
+
   
+  &__social-media {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 2px;
+
+    li {
+      margin: 10px;
+    }
+
+    a {
+      font-size: 25px;
+      display: block;
+      transition: transform 0.3s;
+      
+      &:hover {
+        color: #13ADC7;
+        transform: scale(1.5);
+      }
+      
+    }
+  }
+
+
 }
 
 
 
-.top-nav__title {
-  font-weight: inherit;
-  text-align: center;
-  user-select: none;
-  font-size: 2vw;
-  align-self: start;
-  position: relative;
-  top: -20px;
-}
-
-.top-nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-.top-nav__page {
-  gap: 60px;
-}
 
 
-.top-nav li {
-  position: relative;
-}
 
-.top-nav__page a::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 5px;
-  background: variables.$gradient;
-  bottom: -10px;
-  left: 0;
-  transition: all 0.5s;
-  border-radius: 10px;
-}
 
-.top-nav__page a:hover::after {
-  width: 100%;
-} 
 
-.top-nav__social-media {
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  gap: 2px;
-}
 
-.top-nav__social-media li {
-  margin: 10px;
-}
-.top-nav__social-media a {
-  font-size: 25px;
-  display: block;
-  transition: transform 0.3s;
-}
-.top-nav__social-media a:hover {
-  color: #13ADC7;
-  transform: scale(1.5);
-}
+
 
 @media screen and (hover:none) {
   .top-nav__page a:hover::after {
@@ -130,30 +151,33 @@ header {
     width: 100vw;
     transform: translateX(-100vw);
     transition: transform 0.3s;
-  }
 
-  .top-nav__title {
-    font-weight: inherit;
-    text-align: center;
-    user-select: none;
-    font-size: 18px;
-    align-self: center;
-    position: relative;
-  }
-  .top-nav__page {
-    flex-grow: 1;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
+    &__title {
+      font-weight: inherit;
+      text-align: center;
+      user-select: none;
+      font-size: 18px;
+      align-self: center;
+      position: relative;
+    }
+
+    &__page {
+      flex-grow: 1;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    &__social-media {
+      height: fit-content;
+      gap: 30px;
+      transform: scale(1.5);
+      padding-bottom: 50px;
+    }
   
-  .top-nav__social-media {
-    height: fit-content;
-    gap: 30px;
-    transform: scale(1.5);
-    padding-bottom: 50px;
   }
 
+  
   .hide {
     transform: translate(-100vw);
   }
